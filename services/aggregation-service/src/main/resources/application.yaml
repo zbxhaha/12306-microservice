@@ -102,3 +102,8 @@ management:
   metrics:
     tags:
       application: ${spring.application.name}
+
+  spring:
+    autoconfigure:
+      exclude:
+        - org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration
